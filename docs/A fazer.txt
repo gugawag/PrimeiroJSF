@@ -1,0 +1,20 @@
+1 - Alterar a navegação do sistema para, ao invés de ir 
+à página loginInvalido.xhtml após login inválido, continuar 
+na página index.xhtml. Para isso, altere o método
+logar do backing bean UsuarioBean, retornando null para o caso
+de login inválido;
+
+2 - Colocar componente <h:messages/> em qualquer área do index.xhtml
+para mostrar mensagens;
+
+3 - Alterar o método logar do UsuarioBean para inserir mensagem
+ao usuário apropriada caso ele não consiga logar no sistema.
+Para isso, leia o post http://gugawag.wordpress.com/2009/04/27/trabalhando-com-mensagens-em-jsf/.
+Deste post, o que vai lhe interessar agora é a parte "Mostrando mensagens em nossas páginas".
+
+4 - Coloque um Validator (validador) na tela de login
+para cada campo de entrada. Tanto o nome de login quanto a senha 
+deve ter no mínimo 8 e máximo 10 caracteres. Para isso, use o validador
+<f:validateLength .../> dentro das respectivas tags de input.
+
+   
